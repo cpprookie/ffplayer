@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+  <head>
+    <title>ff-player</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="height: 100%">
+    <div class="container">
+
+      <h2 class="logo">ff-player</h2>
+      <div class="cover-wrapper">
+        <img src="http://p1.music.126.net/tRBr4mAvZrg0HPk6lz-c2g==/2533274790647313.jpg?param=200y200" alt="cover" class="cover">
+      </div>
+
+      <div class="vol-pro-wrapper">
+        <div class="volume-wrapper">
+          <div class="volume-slider"></div>
+          <span class="volume-btn"></span>
+        </div>
+        <a href="javascript: void(0)" id="volume" class="volume"></a>
+        <div class="progress-wrapper">
+          <div class="progress"></div>
+          <span class="progress-btn"></span>
+        </div>
+        <span id="time" class="time small">00:00/00:00</span>
+      </div>
+
+      <div class="btn-wrapper">
+        <a href="javascript: void(0)" id="previous" class="previous"></a>
+        <a href="javascript: void(0)" id="play" class="play"></a>
+        <a href="javascript: void(0)" id="next" class="next"></a>
+      </div>
+      
+      <audio src="file:///C:/Users/CT/Documents/mycode/practice/htmlprac/ffPlayer/music/The Chain.mp3">
+      </audio>
+    </div>
+    <script src="./plugin/slider.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

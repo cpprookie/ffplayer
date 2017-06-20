@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  vertical-align: center;
+  /*background-color: #555*/
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.small {
+  font-size: 12px;
+  color: #797979;
+  text-shadow: 0 1px 0 #121212;
+}
+
+.container {
+  display: block;
+  background-color: #323231;
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px 30px 0 30px;
+  text-align: center;
+}
+
+  .cover {
+    border-radius: 50%;
+    animation: round 30s linear infinite;
+  }
+
+  @keyframes round {
+    100% {transform: rotate(360deg)}
+  }
+
+  .vol-pro-wrapper {
+    height: 30px;
+    display: flex;
+    position: relative;
+  }
+
+    .volume-wrapper {
+      position: absolute;
+      height: 90px;
+      width: 4px;
+      top: -90px;
+      left: 15px;
+      border-radius: 2px;
+      visibility: hidden;
+    }
+
+      .volume-slider {
+        position: absolute;
+        background-color: red;
+        width: 4px;
+        bottom: 0;
+        height: 30px;
+        border-radius: 2px
+      }
+
+      .volume-btn {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        width: 18px;
+        height: 20px;
+        left: -7px;
+        background: url(https://music.163.com/style/web2/img/iconall.png?db9fa434b1bd5403c3a8e55cfc31e3aa) no-repeat;
+        background-position: -40px -250px;
+        cursor: pointer;
+      }
+
+      .volume-btn:hover {
+        background-position: -40px -280px;
+      }
+
+    .vol-pro-wrapper .volume {
+      width: 25px;
+      height: 25px;
+      background-position: -2px -248px;
+      margin-left: 5px;
+      margin-right: 10px;
+    }
+
+    .vol-pro-wrapper .volume:hover {
+      background-position: -31px -248px;
+    }
+
+/*.volume-wrapper {
+  position: absolute;
+  top: -113px;
+  left: 9px;
+  width: 32px;
+  height: 32px;
+  visibility: hidden;
+}*/
+
+  .progress-wrapper {
+    position: relative;
+    width: 280px;
+    margin-top: 12px;
+    height: 6px;
+    background-color: #ffd;
+    border-radius: 3px;
+  }
+
+    .progress {
+      background-color: red;
+      height: 6px;
+      border-radius: 3px;
+      z-index: 1;
+      width: 0;
+      max-width: 280px;
+      overflow: hidden;
+    }
+
+    .progress-btn {
+      position: absolute;
+      height: 24px;
+      width: 22px;
+      left: -11px;
+      top: -7px;
+      background: url(https://music.163.com/style/web2/img/iconall.png?db9fa434b1bd5403c3a8e55cfc31e3aa) no-repeat;
+      background-position: 0 -250px;
+      cursor: pointer;  
+      z-index: 2;
+    }
+
+    .progress-btn:hover {
+      background-position: 0 -280px;
+    }
+
+    .btn-wrapper .play {
+      width: 36px;
+      height: 36px;
+      margin-top: 0;
+      background-position: 0 -204px;
+    }
+
+    .btn-wrapper .play:hover {
+      background-position: -40px -204px;
+    }
+
+    .btn-wrapper .pause {
+      width: 36px;
+      height: 36px;
+      margin-top: 0;
+      background-position: 0 -165px;
+    }
+
+    .btn-wrapper .pause:hover {
+      background-position: -40px -165px;
+    }
+
+    .btn-wrapper .previous {
+      width: 28px;
+      height: 28px;
+      background-position: 0 -130px;
+      margin-bottom: 4px;
+    }
+
+    .btn-wrapper .previous:hover {
+      background-position: -30px -130px;
+    }
+
+    .btn-wrapper .next {
+      width: 28px;
+      height: 28px;
+      background-position: -80px -130px;
+      margin-bottom: 4px;
+    }
+
+    .btn-wrapper .next:hover {
+      background-position: -110px -130px;
+    }
+
+  .time {
+    display: block;
+    position: absolute;
+    right: 10px;
+    margin-top:8px;
+  }
+
+  .play,.pause, .previous, .next ,.volume {
+    background: url(https://music.163.com/style/web2/img/frame/playbar_8.png?904c92305ed99579afcff04d0c63709b) no-repeat 0 9999px;
+  }
+
+#volume-slider {
+  display: none;
+}
