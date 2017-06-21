@@ -59,6 +59,7 @@ volume.addEventListener('click', function() {
 let audio = document.querySelector('audio'),
      play = document.querySelector('#play'),
      time = document.querySelector('#time'),
+     cover = document.querySelector('.cover') ,
      progress = document.querySelector('.progress'),
      progressBtn = document.querySelector('.progress-btn')
      fullWidth = progress.parentElement.getBoundingClientRect().width
@@ -85,11 +86,13 @@ function toggle () {
   }
   
   if (this.className === 'play') {
-    this.className = 'pause'
+    this.className = 'pause' 
     audio.play()
+    cover.style.animationPlayState = "running"
   } else {
     this.className = 'play'
     audio.pause()
+    cover.style.animationPlayState = "paused" 
   }
 }
 

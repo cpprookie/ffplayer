@@ -36,6 +36,7 @@ a {
   .cover {
     border-radius: 50%;
     animation: round 30s linear infinite;
+    animation-play-state: paused;
   }
 
   @keyframes round {
